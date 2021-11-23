@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    background-color: #f784e9;
+  }
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #e4007d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+
+    input[type=submit]:hover {
+        background-color: #cb90e9;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    input[type=reset] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=reset]:hover {
+        background-color: #cb90e9;
+    }
+    input[type=email],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=checkbox],
+    select {
+        
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .dropbtn {
+  background-color: #62e0ee;
+  color: rgb(14, 21, 233);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+        
+</style>
+
+<body>
+
+    <h3>Registration</h3>
+
+    <div>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="Mname">Middle Name</label>
+            <input type="text" id="Mname" name="middlename">
+
+            <label for="Famname">Family Name</label>
+            <input type="text" id="Famname" name="familyname">
+           
+            <p>Gender</p>
+            <input type="radio" id="html" name="Male" value="Male">
+             <label for="Male">Male</label><br>
+             <input type="radio" id="css" name="Female" value="Female">
+             <label for="Female">Female</label><br><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <p>Home Address</p>
+            <textarea id="home" name="home" rows="2" cols="205"></textarea>
+
+            <p>Hobbies:</p>
+            <input type="checkbox" id="cgames" name="cgames" value="cgames">
+            <label for="cgames">Computer Games</label><br>
+            <input type="checkbox" id="MI" name="MI" value="MI">
+            <label for="MI"> Playing Music Instrument</label><br>
+            <input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
+            <label for="Cooking"> Cooking</label><br>
+            <input type="checkbox" id="Drawing" name="Drawing" value="Drawing">
+            <label for="Drawing"> Drawing</label><br><br>
+           
+           
+            <div class="dropdown">
+             <button class="dropbtn">Favorite Color</button>
+             <div class="dropdown-content">
+                    <a href="#">Blue</a>
+                    <a href="#">Green</a>
+                    <a href="#">Red</a>
+                </div>
+            </div>
+
+            <p>Say something about yourself</p>
+            <textarea id="self" name="self" rows="2" cols="205"></textarea>
+
+
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+
+</body>
+
+</html>
